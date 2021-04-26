@@ -9,8 +9,8 @@
  },
 
  {
-   "repository": "android_device_xiaomi_google",
-   "target_path": "device/xiaomi/google"
+   "repository": "vendor_xiaomi_google",
+   "target_path": "vendor/xiaomi/google"
  },
 
   {
