@@ -24,12 +24,16 @@
     </string-array>
 
     <string-array name="device_power_save_refresh_rates">
+        <item>30 Hz</item>
         <item>50 Hz</item>
         <item>60 Hz</item>
+        <item>90 Hz</item>
     </string-array>
     <string-array name="device_power_save_refresh_rates_val">
+        <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
     </string-array>
 
     <!-- Values for Dirac headset pref -->
@@ -97,6 +101,7 @@
         <item>@string/dirac_preset_country</item>
         <item>@string/dirac_preset_dance</item>
         <item>@string/dirac_preset_metal</item>
+        <item>@string/dirac_preset_bass_booster</item>
     </string-array>
 
     <string-array name="dirac_preset_pref_values" translatable="false">
@@ -111,5 +116,6 @@
         <item>"0,0,-2,-2,2,2,0"</item>
         <item>"0,4,2,0,-2,-2,4"</item>
         <item>"2,0,0,-2,-4,0,0"</item>
+        <item>"10,8,-3,0,-3,5,5"</item>
     </string-array>
 </resources>
