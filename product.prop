@@ -91,3 +91,22 @@ persist.sys.wfd.virtual=0
 
 # Zygote
 persist.device_config.runtime_native.usap_pool_enabled=true
+<<<<<<< HEAD
+=======
+
+# PPUI
+ro.ppui.device_name=POCO X2
+ro.ppui.version=3.4 
+ro.ppui.version_code=Onyx 
+ro.ppui.is_official=true
+ro.ppui.maintainer_name=Kunal
+
+#Dpi
+ro.sf.lcd_density=392
+
+# Blurs
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1 
+debug.sf.latch_unsignaled=1
+debug.sf.disable_backpressure=1 
+>>>>>>> 01fa3c5... add blur
