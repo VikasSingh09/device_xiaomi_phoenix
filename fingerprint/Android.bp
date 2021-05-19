@@ -31,8 +31,6 @@ cc_binary {
     init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150-ext.rc"],
     vintf_fragments: [
         "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150.xml",
-        "vendor.xiaomi.hardware.fingerprintextension@1.0.xml",
     ],
-    shared_libs: ["vendor.xiaomi.hardware.fingerprintextension@1.0"],
     cflags: ["-DXIAOMI_FINGERPRINTEXTENSION"],
 }
