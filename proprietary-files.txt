@@ -1046,8 +1046,8 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# Power-off charging daemon - from DAVINCI V20.9.3
-bin/charger:bin/chargeonlymode|6956aad3634dd30d7387173094daf23ae6f15898
+# Power-off charging daemon
+-sbin/charger:bin/chargeonlymode
 
 # QDCM
 vendor/etc/qdcm_calib_data_xiaomi_37_02_0a_video_mode_dsc_dsi_panel.xml
