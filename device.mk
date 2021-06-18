@@ -168,7 +168,8 @@ PRODUCT_PACKAGES += \
 
 # Device Settings
 PRODUCT_PACKAGES += \
-    XiaomiParts
+    XiaomiParts \
+    POCOParts
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/parts/privapp-permissions-parts.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-parts.xml
@@ -265,6 +266,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.mi_thermald.rc \
     init.qcom.rc
+
+# POCOParts init
+PRODUCT_PACKAGES += \
+    init.pocoparts.sh \
+    init.pocoparts.rc
 
 # IPC router config
 PRODUCT_COPY_FILES += \
@@ -365,9 +371,20 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_phoenix/com.android.nfc_extras.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_phoenix/com.nxp.mifare.xml
 
+# Notch style overlay
+PRODUCT_PACKAGES += \
+    NotchNoFillOverlay
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
+
+# Overlays - override vendor ones
+PRODUCT_PACKAGES += \
+    FrameworksResCommon \
+    FrameworksResTarget \
+    DevicesOverlay \
+    DevicesAndroidOverlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -477,7 +494,8 @@ PRODUCT_PACKAGES += \
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-    $(LOCAL_PATH)/configs/seccomp/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy
+    $(LOCAL_PATH)/configs/seccomp/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
+    $(LOCAL_PATH)/configs/seccomp/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 
 # Sensor
 PRODUCT_PACKAGES += \
