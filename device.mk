@@ -18,6 +18,9 @@ $(call inherit-product, vendor/xiaomi/google/google.mk)
 # Include PSU if synced
 $(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
 
+# Sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
 
